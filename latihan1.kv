@@ -1,0 +1,39 @@
+<MyGrid2>
+
+    name1: name
+    emailvar: email
+    coursex: course
+
+    GridLayout:
+        cols: 1
+        size: self.parent.width - 200, self.parent.height - 200
+        pos: 100, 100
+
+        GridLayout:
+            cols: 2
+
+            Label:
+                text: "Name : "
+
+            TextInput:
+                id: name
+                multiline: False
+
+            Label:
+                text: "Email : "
+
+            TextInput:
+                id: email
+                multiline: False
+
+            Label:
+                text: "Course : "
+
+            TextInput:
+                id: course
+                multiline: False
+
+        Button:
+            text: "SUBMIT"
+            font_size: 12
+            on_press: root.button()
